@@ -1,0 +1,121 @@
+.logo-footer {
+  width: 80px;
+  float: left;
+  margin-right: 10px;
+}
+
+ul, li {
+  list-style-type: none;
+  list-style-type: none;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.adres-details {
+  display: block;
+}
+
+footer {
+  font-size: 13px;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  color: #686868;
+}
+
+  footer > section {
+    display: block;
+    vertical-align: middle;
+  }
+
+section a {
+  color: #686868;
+  text-decoration: none;
+}
+
+section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+footer > section + section {
+  border-left: 1px solid #CECECE;
+}
+
+.small-section {
+  width: 20%;
+}
+
+.large-section {
+  width: 30%;
+}
+
+.login-section {
+  color: #FC5012;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.footer-login-icon {
+  height: 20px;
+  width: 25px;
+  margin-right: 5px;
+}
+
+.adres-details {
+  display: block;
+}
+
+.create-provider {
+  margin-top: 10px;
+}
+
+.flex-center {
+  display: inline-flex;
+}
+
+.align-items-center {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+
+.create-account {
+  color: #FC5012;
+}
+
+@media (max-width: 767px) {
+  footer > section + section {
+    border-left: 0;
+  }
+
+  .small-section {
+    width: 100%;
+  }
+
+  .large-section {
+    width: 100%;
+  }
+
+  footer {
+    display: block;
+    width: 80%;
+    margin: auto;
+    color: #686868;
+  }
+
+    footer > section {
+      display: block;
+      vertical-align: middle;
+    }
+}

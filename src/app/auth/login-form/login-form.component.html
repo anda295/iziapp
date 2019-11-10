@@ -1,0 +1,26 @@
+<div class="login-container-modal">
+  
+        <div class="text-center m-b-md">
+        <img class="auth-client-logo" src="/icons/svg/autentificare-client-black.svg" onerror="this.src='/icons/logo.png'" />
+            <div class="auth-client-title">Autentificare</div>
+        </div>
+        <div class="hpanel">
+            <div class="panel-body">
+                    <form (ngSubmit)="onSignInSubmit()" #f="ngForm"  class="login-form">
+                        <div class="form-group">
+                            <label class="control-label" for="logemail">Adresă de email</label>
+                            <input type="email" [(ngModel)]="signInUser.email" placeholder="example@gmail.com" title=" Adăugați adresa de email " required="" value="" name="logemail" id="logemail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="logpassword">Parolă</label>
+                            <input type="password" [(ngModel)]="signInUser.password"  placeholder="******" required="" value="" name="logpassword" id="logpassword" class="form-control">
+                        </div>
+                        <div class="forgot-password"> am uitat parola</div>
+                        <button type="submit" class="btn btn-block login-btn"  [disabled]="!(f.valid)" > Intră în cont </button>
+                        <hr class="separator"/>
+                   
+                        <div class="error" *ngIf="error != ''">{{error}}</div>
+                    </form>
+            </div>
+        </div>
+</div>

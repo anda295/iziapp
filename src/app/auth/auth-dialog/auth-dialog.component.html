@@ -1,0 +1,32 @@
+<div class="modal" materialize="modal" [materializeActions]="modalActions">
+
+
+        <div class="modal-content">
+      
+          <div class="">
+      
+            <div class="">
+      
+              <span class="modal-close right">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </span>
+            </div>
+      
+            <div class="">
+      
+              <app-login-form (onFormResult)="onLoginFormResult($event)"
+                              *ngIf="isLoginMode()">
+      
+              </app-login-form>
+              <app-register-form (onFormResult)="onRegisterFormResult($event)"
+                                 *ngIf="isRegisterMode()">
+      
+              </app-register-form>
+              <app-signup-email-form  (onFormResult)="onCreateEmailFormResult($event)"
+              *ngIf="isCreateEmailMode()"></app-signup-email-form>
+            </div>
+            
+            <div *ngIf="isLoginMode()" class="no-account"> Nu ai cont? <a class="create-account"  (click)="authMode='register'">Crează-ți un cont nou </a> în câteva secunde .</div>
+            <div *ngIf="isRegisterMode()" class="no-account"> <a (click)="authMode='createEmail'" class="btn btn-block login-btn">Crează cont folosind email</a>  </div>      
+      
+          </div>

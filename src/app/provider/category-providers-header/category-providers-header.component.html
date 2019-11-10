@@ -1,0 +1,56 @@
+<div class="top" [ngClass]="{'food-background': serviceType == 'food', 'clean-background': serviceType == 'clean'}" >
+    <!-- <app-login></app-login> -->
+
+    <div class="header-container">
+        <div class="">
+            <div class="logo" (click)="goHome()">
+                    <img class="logo-img" onerror="this.src='icons/logo.png'" src="icons/svg/izi_logo.svg">
+
+            </div>
+            <div class="header-details">
+                <div class="header-motto ">
+                    <span [innerText]="title"></span>
+                </div>
+                <div class="search">
+                    <div class="flex-center">
+                        <div class="search-section">
+                            <label class="header-label">Tip serviciu:</label>
+                            <a [routerLink]="['/service','food']" (click)="selectService('food')"  id="foodService" class="category " [ngClass]="{'selected-service': serviceType == 'food'}">
+                                <img src="/icons/svg/izi_furculita cutit.svg" onerror="this.src='/icons/food.png'" class="category-icon">
+                            </a>
+                            <a [routerLink]="['/service','clean']" (click)="selectService('clean')"  id="cleanService" class="category " [ngClass]="{'selected-service': serviceType == 'clean'}">
+                                <img src="/icons/svg/izi_matura.svg" onerror="this.src='/icons/clean.png'" class="category-icon" >
+                            </a>
+                        </div>
+                        <div class="search-text">
+                            <input type="text" id="searchText" class="search-input">
+                        </div>
+                    </div>
+                    <div class="flex-center">
+
+                        <div class="search-location">
+                            <label class="header-label">Oraș:</label>
+                            <select class="select-city ddl" disabled>
+                                <option>Iași</option>
+                            </select>
+                        </div>
+                        <div class="search-sort" id="cleanSort" *ngIf="serviceType=='clean'">
+                            <label class="header-label">Sortează:</label>
+
+                            <select class="select-sort ddl" disabled>
+                                <option>tip curățenie</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="search-section">
+                        <a href="#" class="search-button ">
+                            <img src="icons/svg/search-16.svg" onerror="this.src='icons/clean.png'" class="search-icon">
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

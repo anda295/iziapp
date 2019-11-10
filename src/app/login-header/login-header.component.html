@@ -1,0 +1,16 @@
+<div class="login-container">
+        <div class="username" *ngIf="isLoggedIn$ | async"> Salut,
+            
+        </div>
+
+            <div class="login-client">
+                <a (click)="presentAuthDialog('login')"  id="login-client" class="login-client-modal">
+                    <img class="login-client-img" src="icons/svg/autentificare-client-14.svg" onerror="this.src='icons/logo.png'"
+                    /> Autentificare client</a>
+            </div>
+            <div class="login-provider">
+               <a  [routerLink]="['/provider']" > <img class="login-provider-img" src="icons/svg/furnizor-servicii.svg" onerror="this.src='icons/logo.png'" />
+                    Furnizor servicii </a></div>
+                
+</div>
+<app-auth-dialog #authDialog ></app-auth-dialog>

@@ -1,0 +1,35 @@
+<div class="top">
+  <app-login></app-login>
+  <div class="header-container">
+    <div class="">
+      <div class="logo" (click)="goHome()">
+        <img class="logo-img" src="icons/svg/izi_logo.svg" onerror="this.src='icons/logo.png'" />
+      </div>
+      <div class="header-details">
+        <div class="header-motto ">
+          Cu ce te putem ajuta astazi?
+        </div>
+        <div class="search">
+          <div class="flex-center">
+            <div class="search-section">
+              <a [routerLink]="['/service','food']" class="category " [ngClass]="{'selected-service': mode == 'foodService'}">
+                <img src="icons/svg/izi_furculita cutit.svg" onerror="this.src='icons/food.png'" class="category-icon">
+              </a>
+              <a [routerLink]="['/service','clean']" class="category">
+                <img src="icons/svg/izi_matura.svg" onerror="this.src='icons/clean.png'" class="category-icon">
+              </a>
+            </div>
+            <div class="search-text">
+              <input type="text" class="search-input" placeholder="Căută după feluri de mâncare sau tipuri de curățenie">
+            </div>
+          </div>
+          <div class="search-section">
+            <a href="#" class="search-button ">
+              <img src="icons/svg/search-16.svg" onerror="this.src='icons/clean.png'" class="search-icon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

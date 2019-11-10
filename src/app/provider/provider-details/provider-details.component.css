@@ -1,0 +1,43 @@
+
+.provider-image{
+  width: 100%
+}
+.provider-price, .provider-name{
+  color: #A1A1A1;
+  font-size: 14px;
+}
+
+  .provider-specialty {
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    margin-right: 10px;
+    width: 80%;
+  }
+
+  .provider-raiting{
+    font-size: 0.7em;
+     display: inline;
+    padding-left: 2%;
+  }
+  .provider-raiting .fa-star{color: #FC5012;}
+  .provider{
+    margin: auto;
+    JUSTIFY-CONTENT: center;
+    padding: 0 0.5em;
+  }
+  
+  .rating-value {
+    display: none;
+  }
+  .align-items-center {
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.d-flex {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+}

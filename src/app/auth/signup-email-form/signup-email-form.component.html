@@ -1,0 +1,43 @@
+<div class="login-container-modal">
+
+        <div class="text-center m-b-md">
+            <img class="auth-client-logo" src="/icons/svg/autentificare-client-black.svg" onerror="this.src='/icons/logo.png'" />
+            <div class="auth-client-title">Înregistrare</div>
+        </div>
+        <div class="hpanel">
+            <div class="panel-body">
+                <form (ngSubmit)="onSignUpSubmit()" #f="ngForm"  class="login-form">
+                    <div class="form-group">
+                        <label class="control-label" for="email">Adresă de email</label>
+                        <input type="text" [(ngModel)]="registerUser.email" placeholder="example@gmail.com" title=" Adăugați adresa de email " required="" value="" name="email" id="logemail"
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="password">Parolă</label>
+                        <input type="password" [(ngModel)]="registerUser.password"  placeholder="******" required="" value="" name="password" id="logpassword"
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <div class="name-container">
+                            <label class="control-label" for="name">Nume</label>
+                            <input type="text" title="" [(ngModel)]="registerUser.name" required="" value="" name="name" id="logname" class="form-control">
+                        </div>
+                        <div class="firstname-container">
+                            <label class="control-label" for="firstname">Prenume</label>
+                            <input type="text" [(ngModel)]="registerUser.firstname" title=" " required="" value="" name="firstname" id="firstName" class="form-control">
+                        </div>
+                    </div>
+                    <div class="terms-container">
+                        <label class="check">
+                            <input type="checkbox" id="acceptTerms" name="acceptTerms" [(ngModel)]="registerUser.acceptTerms" />
+                            <div class="box"></div>
+                        </label>
+                        <label class="acceptTerms-label" for="acceptTerms">Sunt de acord cu
+                            <a href="/terms">  Termenii și condițiile </a>  de utilizare și declar că am peste 18 ani </label>
+                    </div>
+                    <button class="btn btn-block login-btn" [disabled]="!(f.valid)" type="submit"  disabled="true" id="createAccountBtn"> Crează cont </button>
+                    <div class="error">{{error}}</div>
+                </form>
+            </div>
+        </div>
+    </div>

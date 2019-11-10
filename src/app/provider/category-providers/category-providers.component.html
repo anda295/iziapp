@@ -1,0 +1,32 @@
+<category-providers-header (onSelectedService)="onSelectService($event)"></category-providers-header>
+<div class="providers-container">
+    <div class="service-content ">
+        <div class="top-title"> {{title}}</div>
+        <div class="top-sub-title">{{subTitle}}</div>
+        <div class="providers-sort">
+            <div class="sort-section d-flex align-items-center">
+                <div class="sort-label">ordonează după:</div>
+                <a href="#">
+                    <div class="sort-providers d-flex align-items-center"> număr stele
+                        <svg fill='#FC5012' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'>
+                            <path d='M7 10l5 5 5-5z' />
+                            <path d='M0 0h24v24H0z' fill='none' />
+                        </svg>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sort-providers d-flex align-items-center"> preț
+                        <svg fill='#FC5012' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'>
+                            <path d='M7 10l5 5 5-5z' />
+                            <path d='M0 0h24v24H0z' fill='none' />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+      <div class="top-service">
+        <provider-list [providers]="providers">
+        </provider-list>
+      </div>
+    </div>
+</div>

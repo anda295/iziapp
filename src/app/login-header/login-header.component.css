@@ -1,0 +1,61 @@
+
+  a#login-client{
+    color: white;
+    text-decoration: none;
+    
+  }
+  a#login-client:hover{
+    color: white;  
+  }
+  .login-provider-img{
+    height: 21px;
+    margin-right:3px; 
+  }
+  .login-client{
+    padding-right: 10px;
+  }
+  .login-icon{
+    color: white;
+    font-size: 20px;
+    height: fit-content;
+    padding-right: 5px;
+  
+  }
+
+  .login-container{   
+    position: absolute;
+    right: 5%;
+    display: flex;
+    color: white;
+    top: 20px;
+    font-family: Aller;
+    font-size: 15px;
+    z-index: 5;
+ }
+ .login-client-img{
+   height: 25px;
+   margin-right:3px; 
+ 
+ }
+
+ @media (max-width: 550px) {
+    .login-provider-img{
+        height: 19px;
+    }
+    .login-client-img{
+        height: 20px;
+    }
+
+    .login-container{
+      margin: auto;
+      width: 100%;
+      justify-content: center;
+      right: 0;
+      font-size: 13px;
+    }
+   .flex-center{
+     display: flex;
+     justify-content: center;
+
+   }
+}

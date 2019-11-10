@@ -1,0 +1,29 @@
+<div class="providers-details">
+  <div class="food-content ">
+    <div class="top-title"> Bucate gătite ca la mama acasă</div>
+    <div class="top-sub-title">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+    </div>
+    <div class="see-all-container">
+      <a [routerLink]="['/service','food']" class="see-all"> vezi toate </a>
+    </div>
+    <div class="top-food">
+        <provider-list [providers]="foodProviders">
+        </provider-list>
+    </div>
+  </div>
+  <div class="clean-content">
+    <div class="top-title"> Casa ta devine luna</div>
+    <div class="top-sub-title">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    </div>
+    <div class="see-all-container">
+      <a [routerLink]="['/service','clean']" class="see-all "> vezi toate </a>
+    </div>
+    <div class="top-clean">
+      <provider-list [providers]="cleanProviders">
+      </provider-list>
+
+    </div>
+  </div>
+</div>
